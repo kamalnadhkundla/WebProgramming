@@ -1,0 +1,33 @@
+#green-box {
+    border: 10px solid rgb(235, 93, 93);
+    padding: 5px;
+    margin:25px;
+    background-color: yellowgreen;
+    text-align: center;
+    
+}
+#side-text{
+       border:10px solid blue;
+        width: -10px;; /* Set the width as needed */
+        background-color:red; /* Light blue background */
+        height:750px;
+        margin:10px 10px 10px 10px;
+        padding:10px 10px 10px 10px;
+        margin-left: 10px; /* Adjust margin to separate the side box from the main content */
+        float: left; /* Float the side box to the right */
+    
+}
+
+.blue-box {
+    border: 4px solid #d0e9c2;
+    background-color: #edfbe8;
+    padding: 5px;
+    margin: 100px;
+}
+.span-class{
+
+border: 4px solid #C2E9E9;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin: 10px 0 0 0;
+}

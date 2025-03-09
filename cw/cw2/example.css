@@ -1,0 +1,48 @@
+header {
+    text-align: center;
+    font-family: sans-serif;
+    
+}
+
+.example {
+    font-family: serif;
+
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    width: 70%;
+    display: flex;
+}
+
+.left {
+    flex-basis: 33%;
+}
+
+.right {
+    flex-basis: 67%;
+}
+
+img {
+    float: right;
+    width: 200px;
+}
+
+.clear {
+    clear: both
+}
+
+.column {
+    padding: 2rem;
+    margin: 2rem;
+    border: 4px dashed red;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 5px;
+}

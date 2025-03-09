@@ -1,0 +1,28 @@
+Team no: 18
+
+Team members:
+1) Name: Sanjana Sirnam
+   Panther id: 002814434
+
+2) Name: Kamalnadh Kundla
+   Panther id: 002766743
+
+Project Information Page Codd Server link:
+https://codd.cs.gsu.edu/~ssirnam1/WP/PW/1/info.html
+
+Github Hosted Link:
+https://sanjana873.github.io/index.html
+
+Github Repo Link:
+https://github.com/sanjana873/sanjana873.github.io
+
+PPT link:
+https://docs.google.com/presentation/d/1Y1sG9CcT7v-fDjHYqxPhxaUOONKHjBw301BOZlFqt58/edit?usp=sharing
+
+Development Presentation link:
+https://www.youtube.com/watch?v=xvFyXUTw9bI
+
+Testing Presentation link:
+https://www.youtube.com/watch?v=wWUlfztrWLs
+
+

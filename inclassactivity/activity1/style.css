@@ -1,0 +1,53 @@
+img{
+    position: relative;
+    left: 10px;
+    top: 5px;
+    z-index: 0;
+    width:85%;
+    height:95%
+}
+.frame{
+    width: 300px; 
+    height: 400px; 
+    border: 10px solid black; 
+    position: absolute;
+    margin: 50px auto; 
+    box-shadow: 10px 10px 10px 10px #888888;
+   
+    
+}
+.words {
+    font-family: impact;
+    font-size: 40px;
+
+    }
+    .first {
+    /* Your code goes here */
+    font-size: 50px;
+    position: absolute;
+  top: 30%;
+  width: 75%;
+  text-align: center;
+  z-index: 1;
+    }
+    .heart {
+        font-size: 60px;
+        position: absolute;
+      top: 30%;
+      width: 94%;
+      text-align: center;
+      color: red;
+      z-index: 1;
+    /* Your code goes here */
+    }
+    .last {
+        font-size: 60px;
+        position: absolute;
+      top: 43%;
+      width: 88%;
+      text-align: center;
+      z-index: 1;
+    /* Your code goes here */
+    }
+
+   

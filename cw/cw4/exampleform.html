@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Sample Form</title>
+</head>
+<body>
+    <h1>Contact Information</h1>
+
+    <form method="post" action="<?php print $_SERVER['PHP_SELF']?>">
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" size="35" maxlength="30" value=""></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="text" name="email" size="40" value=""></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                    <td><textarea name="address" rows="3" cols="40" placeholder="Address"></textarea>
+                    <br> 
+                <tr>
+                    <td>Postalcode:</td>
+                    <td><input type="text" name="postal_code" size="10" placeholder="postal code">
+                </td>
+            </tr>
+            <tr>
+                <td>Do you like playing computer games?</td>
+                <td>
+                    <input type="checkbox" name="games" value="yes"> Yes
+                    <input type="checkbox" name="games" value="no"> No
+                </td>
+            </tr>
+            <tr>
+                <td>How much did you enjoy the 'Star Wars' Trilogy?</td>
+                <td>
+                    <input type="radio" name="star_wars" value="enjoyed"> I enjoyed it
+                    <input type="radio" name="star_wars" value="not_enjoyed"> I did not enjoy it
+                    <input type="radio" name="star_wars" value="not_seen"> I have not seen it
+                </td>
+            </tr>
+            <tr>
+                <td>Do you have an email address?</td>
+                <td>
+                    <input type="checkbox" name="has_email" value="yes"> Yes
+                    <input type="checkbox" name="has_email" value="no"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Chocolate is delicious?</td>
+                <td>
+                    <input type="radio" name="chocolate" value="strongly_agree"> Strongly Agree
+                    <input type="radio" name="chocolate" value="agree"> Agree
+                    <input type="radio" name="chocolate" value="neutral"> Neutral
+                    <input type="radio" name="chocolate" value="disagree"> Disagree
+                    <input type="radio" name="chocolate" value="strongly_disagree"> Strongly Disagree
+                </td>
+            </tr>
+            <tr>
+                <td>Do you enjoy listening songs</td>
+                <td>
+                    <input type="radio" name="songs" value="Yes"> Yes
+                    <input type="radio" name="songs" value="No"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Do you enjoy Playing outdoor games</td>
+                <td>
+                    <input type="radio" name="games" value="Yes"> Yes
+                    <input type="radio" name="games" value="No"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Do you enjoy cooking food</td>
+                <td>
+                    <input type="radio" name="cooking" value="Yes"> Yes
+                    <input type="radio" name="cooking" value="No"> No
+                </td>
+            </tr>
+            <tr>
+                <td>Do you enjoy eating spicy food</td>
+                <td>
+                    <input type="radio" name="spicy" value="Yes"> Yes
+                    <input type="radio" name="spicy" value="No"> No
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>

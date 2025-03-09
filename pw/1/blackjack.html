@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="blackjack.css">
+  <title>Blackjack Game</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html#cards-container">Home</a>
+    
+    <a href="welcomebonus.html">About Us</a>
+    <a href="index.html#cards-container">Contact</a>
+  </div>
+  <div class="container">
+    <div class="deck-shuffling"></div>
+
+    <div class="instructions">
+      <img class="card" src="blackjack_how2.jpeg" alt="text">
+      <p>
+         
+       Blackjack is played on a deck of playing cards/ numbers .
+         </p><p>   
+        
+        You can place your chips on the designated areas of the table corresponding to your chosen bet.</p>
+        <p> 
+     
+        
+        Payouts vary based on the type of bet.    </p><p> 
+        
+        You can choose to place new bets for the next spin or cash out your chips.</p>
+    <p>    
+        
+        Follow casino etiquette. Don't touch your bets once the ball is in play, and be mindful of other players and the dealer.</p> </div>
+
+    <div class="game-section">
+      <div class="player">
+        <h3>Player</h3>
+        <div class="cards">
+          <!-- Player's cards go here -->
+          <div class="card" style="background-image: url('k-removebg-preview.png');"></div>
+          <div class="card" style="background-image: url('ace1-removebg-preview.png');"></div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="hit">Hit</button>
+        <button id="stand">Stand</button>
+      </div>
+
+      <div class="dealer">
+        <h3>Dealer</h3>
+        <div class="cards">
+          <!-- Dealer's cards go here -->
+          <div class="card" style="background-image: url('4-removebg-preview.png');"></div>
+          <div class="card">?</div>
+        </div>
+      </div>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Game #</th>
+          <th> Player</th>
+          <th>Dealer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Won</td>
+          <td>Lost</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td></td>
+          <td></td>
+        </tr>
+        
+      </tbody>
+    </table>
+   <h2 id="imp"> The cards will slide to left when you hover over them.</h2>
+  </div>
+</body>
+</html>

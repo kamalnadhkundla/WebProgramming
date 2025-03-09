@@ -1,0 +1,72 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .music{
+    left: 0;
+    top:0;
+    
+    position: fixed;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    width: 100%; /* Adjust size as needed */
+    height: 100%; /* Adjust size as needed */
+    background-image: url('night.webp'); /* Replace 'morning.jpg' with your morning image */
+    background-size: cover;
+    /* Transition for smooth color change */
+    animation: changeBackground 5s linear infinite;
+  }
+  .moon{
+    z-index: -1;
+    float: right;
+    height:100px;
+    width:100px;
+    animation-name: moonMove;
+         animation-duration: 2s;
+         animation-delay: 1s;
+         animation-fill-mode: forwards;
+         
+
+  }
+  
+.boat1{
+    margin-top: 400px;
+
+}
+.party{
+    z-index: -1;
+    width:30%;
+    height:30%;;    
+    margin-top: 550px;
+   
+    float: right;
+}
+  
+  @keyframes changeBackground {
+    0% {
+      background-image: url('morning.jpg'); /* Initial background image */
+    }
+   
+    100% {
+      background-image: url('night.webp'); /* Final background image */
+    }
+  }
+  @keyframes moonMove {
+    0% {
+        
+        transform: translate(-4000px, 1000px);
+      }
+      100%{
+          transform : translate(20px,20px);
+      }
+    
+  }

@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   
+  }
+
+  .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .instructions {
+    width: 20%;
+    margin-top: 3%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+  }
+
+  .game-section {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(7, 53px);
+    grid-template-rows: repeat(8, 53px);
+    align-items: center;
+    justify-content: center;
+    gap: 3.3%;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+  }
+
+  .cell {
+    width: 70px;
+    height: 70px;
+    background-color:lightskyblue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4em;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+
+
+  .cell:hover {
+    transform: scale(1.1) rotate(360deg); /* Rotate the candy 360 degrees on hover */
+  }
+  .instructions img{
+      width: 100%;
+      height: 20%;
+  }
+  .navbar {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+  }
+  #imp{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 50%;
+  }
+  table {
+    margin-top: 30%;
+    width: 20%;
+    height: 15%;
+    
+    
+  }
+  
+  th, td {
+    text-align: center;
+    border: 1px solid black;
+  }
+  th {
+    background-color: #f2f2f2;
+  }

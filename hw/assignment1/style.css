@@ -1,0 +1,80 @@
+body{
+    
+	text-align: center;
+	background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+   
+    font-family: sans-serif;
+}
+#content{
+    display: flex;
+}
+a:hover{
+    background-color: red;
+}
+
+#header{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#content #leftbar img{
+    border: 2px solid #333; 
+    border-radius: 8px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    height: 350px;
+    width: 300px 
+    
+}
+#content #leftbar{
+    text-align: center;
+    
+    
+}
+#content #middle  {
+    
+    text-align: center;
+   
+    margin-left: 17%;
+    
+    
+   
+}
+#list2{
+    margin-left: 9%;
+}
+
+#content #middle table{
+    text-align: center;
+}
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+}
+th{
+    width: 150px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(161, 159, 159);	
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+span.red-bold {
+    color: red;
+    font-weight: bold;
+	position: relative;
+  
+
+}

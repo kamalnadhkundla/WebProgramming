@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Application Form</title>
+    <style>
+        .content {
+          max-width: 500px;
+          margin: auto;
+          background-image: url("background.jpeg");
+          background-size: 100% auto;
+          color:gainsboro;
+          padding: 5px 10px;
+          font-size: 130%;
+
+        }
+        input[type="range"] {
+            width: 115%; 
+        }
+        </style>
+</head>
+<body class="content">
+    <h1><center>Job Application Form</center></h1>
+    <form method="post" action="submit_application.php">
+        <label for="position">Position Applied For:</label><br>
+        <input type="text" id="position" size="85" name="position"><br>
+
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" size="85" name="name" required><br>
+
+        <label>Gender:</label><br>
+        <label for="male">Male</label><br>
+        <input type="radio" id="male" name="gender" value="Male"><br>
+        <label for="female">Female</label><br>
+        <input type="radio" id="female" name="gender" value="Female"><br>
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" size="85" name="nationality"><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" size="80" maxlength= "80" placeholder="mm/dd/yyyy"><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="70"></textarea><br>
+
+        <label for="phone">Telephone Number:</label><br>
+        <input type="tel" id="phone" size="85" name="phone"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" size="85" name="email" required><br>
+
+        <h2>Educational History and Qualifications:</h2>
+        <textarea id="qualifications" name="qualifications" rows="4" cols="70"></textarea><br>
+
+        <h2>Work Experience/Employment/Training:</h2>
+        <label for="experience">Years of Experience:</label><br>
+        <input type="range" id="experience" name="experience" min="0" width="100%" max="10" step="1"><br>
+        <span id="experienceValue">0</span> years
+        <br>
+        <label for="personal_statement">Personal Statement:</label>
+        <textarea id="personal_statement" name="personal_statement" rows="6" cols="70"></textarea><br>
+
+        <h2>Referees:</h2>
+        <label for="referee_name">Name:</label><br>
+        <input type="text" id="referee_name" size="85" name="referee_name"><br>
+
+        <label for="occupation">Occupation:</label>
+        <input type="text" id="occupation" size="85" name="occupation"><br>
+
+        <label for="relationship">Relationship:</label><br>
+        <select id="relationship" name="relationship">
+            <option value="Friend">Friend</option>
+            <option value="Family">family</option>
+            <option value="Colleague">Colleague</option>
+            <option value="Supervisor">Supervisor</option>
+            <option value="Other">Other</option>
+            </select><br>
+
+        <label for="referee_address">Address:</label><br>
+        <textarea id="referee_address" name="referee_address" rows="1" cols="70"></textarea><br>
+
+        <label for="referee_phone">Telephone:</label><br>
+        <input type="tel" id="referee_phone" size="85" name="referee_phone"><br>
+
+        <h2>Vegetarian:</h2>
+        <input type="checkbox" id="vegetarian_yes" name="vegetarian" value="Yes"><br>
+        <label for="vegetarian_yes">Yes</label><br>
+        <input type="checkbox" id="vegetarian_no" name="vegetarian" value="No"><br>
+        <label for="vegetarian_no">No</label><br>
+
+        Select Fruits (Hold Ctrl/Command to select multiple):<br>
+        <select id="fruits" name="fruits[]" multiple>
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Cherry">Cherry</option>
+            <option value="Orange">Orange</option>
+            <option value="Strawberry">Strawberry</option>
+        </select><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear to Reset">
+    </form>
+</body>
+</html>

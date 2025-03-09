@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CW07-Part1</title>
+	<style type="text/css">
+		.red {
+			color: red;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>ID:</td>
+				<td>
+					<label id="lid"></label><br>
+					<input type="text" name="ID" id="id"/>
+				</td>
+			</tr>
+			<tr>
+				<td>FirstName:</td>
+				<td>
+					<label id="lfirstName"></label><br>
+					<input type="text" name="FirstName" id="firstName"/>
+				</td>
+			</tr>
+			<tr>
+				<td>LastName:</td>
+				<td>
+					<label id="llastName"></label><br>
+					<input type="text" name="LastName" id="lastName"/>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+					<input type="button" value="Add" onclick="validate()"/>
+				</td>
+			</tr>
+		</table>
+
+		<div id="details"></div>
+	</form>
+
+	<script type="text/javascript">
+	function validate() {
+		// Reset error messages to empty
+		document.getElementById("lid").innerHTML = "";
+		document.getElementById("lfirstName").innerHTML = "";
+		document.getElementById("llastName").innerHTML = "";
+
+		var flag=0;
+		var id = document.getElementById('id').value;
+		var firstName = document.getElementById('firstName').value;
+		var lastName = document.getElementById('lastName').value;
+
+		var htmlString = "";
+
+		if (id=="") {
+			document.getElementById("lid").innerHTML = "Please enter an ID";
+			document.getElementById("lid").className = "red";
+			htmlString += "ID, ";
+			flag = 1;
+		}
+		if (firstName=="") {
+			document.getElementById("lfirstName").innerHTML = "Please enter a FirstName";
+			document.getElementById("lfirstName").className = "red";
+			htmlString += "FirstName, ";
+			flag = 1;
+		}
+		if (lastName=="") {
+			document.getElementById("llastName").innerHTML = "Please enter a LastName";
+			document.getElementById("llastName").className = "red";
+			htmlString += "LastName";
+			flag = 1;
+		}
+
+		if (flag == 1) {
+			alert("You forgot to fill the field(s): " + htmlString);
+		} else {
+			document.getElementById("details").innerHTML = "ID: " + id + "<br>FirstName: " + firstName + "<br>LastName: " + lastName;
+			document.getElementById('id').value = "";
+			document.getElementById('firstName').value = "";
+			document.getElementById('lastName').value = "";
+		}
+	}
+</script>
+
+
+</body>
+</html>
